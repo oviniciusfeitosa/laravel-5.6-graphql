@@ -16,7 +16,21 @@ class UserType extends BaseType
     public function fields()
     {
         return [
-            
+            'id' => [
+                'type' => Type::nonNull(Type::int())
+            ],
+            'name' => [
+                'type' => Type::nonNull(Type::int())
+            ],
+            'email' => [
+                'type' => Type::nonNull(Type::string())
+            ],
+            'created_at' => [
+                'type' => Type::date()
+            ],
+            'updated_at' => [
+                'type' => Type::date()
+            ],
         ];
     }
 }
