@@ -124,10 +124,10 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-
+                'user' => App\GraphQL\Query\UserQuery::class
             ],
             'mutation' => [
-
+                'createUser' => App\GraphQL\Mutation\CreateUserMutation::class
             ]
         ]
     ],
