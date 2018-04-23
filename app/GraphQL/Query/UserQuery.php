@@ -5,8 +5,8 @@ namespace App\GraphQL\Query;
 use Folklore\GraphQL\Support\Query;
 use GraphQL\Type\Definition\ResolveInfo;
 use GraphQL\Type\Definition\Type;
-use Folklore\GraphQL\GraphQL;
-use App\Models\User;
+use GraphQL;
+use App\User;
 
 class UserQuery extends Query
 {
@@ -18,7 +18,7 @@ class UserQuery extends Query
     public function type()
     {
         // return Type::listOf(Type::string());
-        return GraphQL::type('UserType');
+        return GraphQL::type('User');
     }
 
     public function args()

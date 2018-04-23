@@ -26,10 +26,10 @@ class UserType extends BaseType
                 'type' => Type::nonNull(Type::string())
             ],
             'created_at' => [
-                'type' => Type::date()
+                'type' => Type::string()
             ],
             'updated_at' => [
-                'type' => Type::date()
+                'type' => Type::string()
             ],
         ];
     }

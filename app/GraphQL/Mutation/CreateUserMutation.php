@@ -6,7 +6,7 @@ use Folklore\GraphQL\Support\Mutation;
 use GraphQL\Type\Definition\ResolveInfo;
 use GraphQL\Type\Definition\Type;
 use GraphQL;
-use App\Models\User;
+use App\User;
 
 class CreateUserMutation extends Mutation
 {
