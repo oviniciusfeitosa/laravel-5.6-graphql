@@ -23,20 +23,6 @@ class UserQuery extends Query
 
     public function args()
     {
-        // return [
-        //     'name' => [
-        //         'type' => Type::nonNull(Type::string())
-        //     ],
-        //     'email' => [
-        //         'type' => Type::nonNull(Type::string()),
-        //         'rules' => ['email', 'unique:users']
-        //     ],
-        //     'password' => [
-        //         'type' => Type::nonNull(Type::string()),
-        //         'rules' => ['min:4']
-        //     ],
-        // ];
-
         return [
             'id' => [
                 'type' => Type::nonNull(Type::int())
